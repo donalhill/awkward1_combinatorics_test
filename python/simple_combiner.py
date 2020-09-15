@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import awkward1 as ak
 
 def calc_invariant_mass(p1, p2):
-    masses = np.sqrt(2*p1["pt"]*p1["pt"]*(np.cosh(p1["eta"] - p2["eta"]) - np.cos(p1["phi"] - p2["phi"])))
+    masses = np.sqrt(2*p1["pt"]*p2["pt"]*(np.cosh(p1["eta"] - p2["eta"]) - np.cos(p1["phi"] - p2["phi"])))
 
 from matplotlib import rc
 rc('font',**{'family':'serif','serif':['Roman']})
